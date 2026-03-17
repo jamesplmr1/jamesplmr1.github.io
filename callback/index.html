@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Spotify Callback</title>
+</head>
+<body>
+  <p>You can close this window.</p>
+
+  <script>
+    // Forward the Spotify OAuth code to your running local server
+    window.location = "http://localhost:8888/callback" + window.location.search;
+  </script>
+</body>
+</html>
